@@ -1,0 +1,57 @@
+include<iostream>
+using namespace std;
+
+int main()
+{
+     
+    int A[3][3];
+    int B[3][3];
+    int C[3][3];
+    int i, j;
+    
+    
+    for ( i=0; i<3; i++)
+    for ( j=0; j<3; j++){
+       cout << "Input Matrix A with an index of[" << i << "][" << j << "]" <<endl;
+        cin >> A[i][j];
+        cout<<endl;
+        }
+        cout << "The Matrix of A is " <<endl;
+   
+     for ( i=0; i<3; i++){
+    for ( j=0; j<3; j++)
+        cout<< A[i][j] <<" ";
+        cout<<endl;
+        }
+        cout<< endl;
+   
+     for ( i=0; i<3; i++)
+    for ( j=0; j<3; j++){
+        cout << "Input Matrix B with an index of[" << i << "][" << j << "]" <<endl;
+        cin >>B[i][j];
+        cout <<endl;
+        }
+        cout<<endl;
+        cout << "The Matrix of B is " <<endl;
+   
+     for ( i=0; i<3; i++){
+    for ( j=0; j<3; j++)
+        cout<< B[i][j] <<" ";
+        cout<<endl;
+        }
+        cout<<endl;
+    
+    for (i=0; i<3; i++)
+    for (j=0; j<3; j++){   
+        C[i][j] += A[i][j]*B[i][j];
+    } 
+        cout<< "The product of Matrix A and B is:\n";
+       
+        for ( i=0; i<3; i++){
+        for ( j=0; j<3; j++)
+        
+        cout<< C[i][j]<< " ";
+        cout <<endl;
+    }
+    return 0;
+}
